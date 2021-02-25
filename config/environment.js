@@ -10,6 +10,7 @@ export const dbURI = environment === 'production'
 
   : `mongodb://localhost/imageUploaddb-${environment}`
 
-export const port = 8000
+export const port = 8000 || process.env.PORT
 
-export const secret = process.env.SECRET
+export const secret = process.env.SECRET || 'This is a really long secret string no one is going to guess 3onsfdnisdo.'
+
